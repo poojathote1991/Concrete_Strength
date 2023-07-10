@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Strength Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body style="background-image: url('https://images.pexels.com/photos/9512003/pexels-photo-9512003.jpeg?auto=compress&cs=tinysrgb&w=600');">
+    
+    <h1> Concrete Strength Prediction </h1>
+    <form method="GET" action="/predicted_strength">
+        <label for="cement">Cement:</label>
+        <input type="text" name="cement" id="cement">
+        <br>
+        <br>
+        <label for="slag">Slag:</label>
+        <input type="text" name="slag" id="slag">
+        <br>
+        <br>
+        <label for="flyash">Flyash:</label>
+        <input type="text" name="flyash" id="flyash">
+        <br>
+        <br>
+        <label for="water">Water:</label>
+        <input type="text" name="water" id="water">
+        <br>
+        <br>
+        <label for="superplasticizer">Superplasticizer:</label>
+        <input type="text" name="superplasticizer" id="superplasticizer">
+        <br>
+        <br>
+        <label for="coarseaggregate">Coarseaggregate:</label>
+        <input type="text" name="coarseaggregate" id="coarseaggregate">
+        <br>
+        <br>
+        <label for="fineaggregate">Fineaggregate:</label>
+        <input type="text" name="fineaggregate" id="fineaggregate">
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age">
+        <br>
+        <br>
+       
+
+        <input type="submit" value="SUBMIT">
+        <br>
+        <br>
+        <h4><strong>Your concrete predicted will be <b> {{ prediction }} </b> </strong></h4>
+    </form>
+
+</body>
+
+</html>
