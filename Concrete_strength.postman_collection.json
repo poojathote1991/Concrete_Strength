@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "cede557b-6de4-4101-892c-fbb73dbe4a29",
+		"name": "Concrete_strength",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28205121"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/predicted_strength",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cement",
+							"value": "236",
+							"type": "text"
+						},
+						{
+							"key": "slag",
+							"value": "157",
+							"type": "text"
+						},
+						{
+							"key": "flyash",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "water",
+							"value": "192",
+							"type": "text"
+						},
+						{
+							"key": "superplasticizer",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "coarseaggregate",
+							"value": "972.6",
+							"type": "text"
+						},
+						{
+							"key": "fineaggregate",
+							"value": "749.1",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "90",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/predicted_strength",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"predicted_strength"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
